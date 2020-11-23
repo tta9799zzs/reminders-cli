@@ -38,10 +38,9 @@ func main() {
 	var p person
 
 	flag.Var(&ids, "ids", "list of ids")
-	flag.Var(&p, "person", "person name")
+	flag.Var(&p, "name", "person name")
 	flag.Parse()
 
 	fmt.Println(ids)
-	fmt.Println(p.name)
-	fmt.Println(p.born)
+	fmt.Println(p)
 }

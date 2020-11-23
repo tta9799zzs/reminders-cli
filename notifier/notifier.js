@@ -16,8 +16,8 @@ app.listen(port, () => console.log(`server is up and running on port: ${port}`))
 const notify = ({title, message}, cb) => {
     notifier.notify(
         {
-            title: title || 'Unknown title',
-            message: message || 'Unknown message',
+            title: title || 'Test notify',
+            message: message || 'Tran Tuan Anh',
             icon: path.join(__dirname, 'gophertuts.png'),
             sound: true,
             wait: true,
